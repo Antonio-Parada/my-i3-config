@@ -86,10 +86,12 @@ cp "$SCRIPT_DIR/config/i3/config" ~/.config/i3/config
 print_status "Installing window management scripts..."
 cp "$SCRIPT_DIR/scripts/alternating_layouts.py" ~/.local/bin/
 cp "$SCRIPT_DIR/scripts/test_script.py" ~/.local/bin/
+cp "$SCRIPT_DIR/scripts/display_setup.sh" ~/.local/bin/
 
 # Make scripts executable
 chmod +x ~/.local/bin/alternating_layouts.py
 chmod +x ~/.local/bin/test_script.py
+chmod +x ~/.local/bin/display_setup.sh
 
 # Ensure ~/.local/bin is in PATH
 if ! echo $PATH | grep -q "$HOME/.local/bin"; then

@@ -136,6 +136,10 @@ bar {
         status_command i3status
 }
 
+# DISPLAY CONFIGURATION
+# Sets up primary display and disables secondary displays (like trackpad screens)
+exec --no-startup-id ~/.config/i3/display_autostart.sh
+
 # ALTERNATING LAYOUT SCRIPT
 # This script automatically alternates between horizontal and vertical splits
 # based on the window dimensions when new windows are opened
