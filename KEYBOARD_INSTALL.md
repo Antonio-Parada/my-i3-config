@@ -35,12 +35,26 @@ The installer will complete and show you next steps. You need to:
    exit
    ```
 
-2. **At login screen** (this is keyboard navigable):
-   - Look for session selection (usually gear icon or dropdown)
-   - Use `Tab` to navigate between fields
-   - Use `Enter` to select options
-   - Choose **"i3"** from session menu
-   - Enter your password and login
+2. **At login screen** (keyboard navigation):
+   
+   **Method 1 - Standard Navigation:**
+   - Use `Tab` to cycle through fields (username, password, session selector)
+   - Use `Shift + Tab` to go backwards
+   - Use `Enter` to activate buttons/dropdowns
+   - Use arrow keys to navigate dropdown menus
+   - Look for gear icon, session dropdown, or "Desktop" menu
+   
+   **Method 2 - Direct Key Shortcuts (if available):**
+   - `F10` or `Alt + F10` often opens session menu
+   - `Ctrl + Alt + F1-F6` can switch to TTY if needed
+   
+   **Method 3 - Set i3 as Default (recommended):**
+   ```bash
+   # Run this BEFORE logging out to set i3 as default
+   echo 'i3' > ~/.dmrc
+   # or
+   sudo update-alternatives --config x-session-manager
+   ```
 
 ### Step 3: First i3 Session
 

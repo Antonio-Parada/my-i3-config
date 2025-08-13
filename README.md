@@ -11,19 +11,30 @@ A complete i3 window manager setup with automatic alternating layout functionali
 
 ## Quick Install
 
+### Standard Installation
 Run this command on your Debian-based system:
 
 ```bash
 curl -sSL https://raw.githubusercontent.com/Antonio-Parada/my-i3-config/main/install.sh | bash
 ```
 
-Or clone and install manually:
+### Keyboard-Only Installation (Recommended for systems without mouse)
+For systems where you can't easily navigate the login screen with a mouse:
 
+```bash
+curl -sSL https://raw.githubusercontent.com/Antonio-Parada/my-i3-config/main/install_with_defaults.sh | bash
+```
+
+### Manual Installation
 ```bash
 git clone https://github.com/Antonio-Parada/my-i3-config.git
 cd my-i3-config
-chmod +x install.sh
-./install.sh
+
+# Standard install
+chmod +x install.sh && ./install.sh
+
+# OR Enhanced install (sets i3 as default, includes session switching helpers)
+chmod +x install_with_defaults.sh && ./install_with_defaults.sh
 ```
 
 ## What Gets Installed
