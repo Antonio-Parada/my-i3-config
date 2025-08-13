@@ -14,13 +14,13 @@ A complete i3 window manager setup with automatic alternating layout functionali
 Run this command on your Debian-based system:
 
 ```bash
-curl -sSL https://raw.githubusercontent.com/YOUR_USERNAME/my-i3-config/main/install.sh | bash
+curl -sSL https://raw.githubusercontent.com/Antonio-Parada/my-i3-config/main/install.sh | bash
 ```
 
 Or clone and install manually:
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/my-i3-config.git
+git clone https://github.com/Antonio-Parada/my-i3-config.git
 cd my-i3-config
 chmod +x install.sh
 ./install.sh
